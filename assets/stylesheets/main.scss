@@ -1,0 +1,92 @@
+// ® Álvaro Lázaro - 2015
+// This file is part of Flagify.
+//
+// Flagify is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Flagify is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+.hidden {
+  display: none;
+}
+
+canvas {
+  width: 100%;
+}
+
+// Bootstrap fixes
+.navbar {
+  padding-left: 0;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .sidebar.navbar-dark {
+    margin-top: 38px;
+  }
+}
+
+
+// Autocomplete
+
+.ui-autocomplete {
+  background-clip: padding-box;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  left: 0;
+  list-style: none;
+  margin: 2px 0 0 0;
+  min-width: 160px;
+  padding: 4px 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+
+  .ui-menu-item {
+    border-bottom: 1px solid #000;
+
+    &:last-child {
+      border-bottom: 0
+    }
+
+    &:hover {
+      background-color: #BBB;
+    }
+  }
+
+  .ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+
+    &.ui-state-hover, &.ui-state-active {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #0088cc;
+      border-radius: 0px;
+      background-image: none;
+    }
+  }
+}

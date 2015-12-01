@@ -1,0 +1,27 @@
+{
+  "name": "flags",
+  "authors": [
+    "Álvaro Lázaro Gallego <alvaro.lazaro.g@gmail.com>"
+  ],
+  "description": "Apply flag filters to your photos",
+  "main": "app/index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://github.com/alazaro/flags",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0",
+    "jquery-ui": "~1.11.4",
+    "bower": "*",
+    "install": "~1.0.4",
+    "smartcrop": "*"
+  }
+}

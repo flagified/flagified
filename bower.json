@@ -18,9 +18,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "4.0",
+    "bootstrap": "4.0.0-alpha",
     "jquery-ui": "~1.11.4",
-    "bower": "*",
     "install": "~1.0.4",
     "smartcrop": "*"
   }

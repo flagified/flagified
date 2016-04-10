@@ -196,7 +196,7 @@ var crop = 0;
 
     this.initializeUI = function() {
       var cache = {};
-      $.getJSON("/assets/json/flags.json", function(data) {
+      $.getJSON("./assets/json/flags.json", function(data) {
         for (var country in data) {
           var path = data[country];
           $('.country-select').append($('<option>').html(country).attr('value', path));
@@ -205,7 +205,7 @@ var crop = 0;
       $('.country-select').on('change', function (value) {
         var selectedOption = $('option:selected', this).val();
         if (selectedOption && self.loggedIn) {
-          self.flagUrl = '/assets/images/flags/' + selectedOption;
+          self.flagUrl = './assets/images/flags/' + selectedOption;
           self.loadPicture();
         }
       });

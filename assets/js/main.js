@@ -164,7 +164,6 @@ var crop = 0;
       var fd = new FormData();
       fd.append('access_token', self.accessToken);
       fd.append('source', blob);
-      fd.append('message', 'Profile flagified by http://flagified.github.io');
       fd.append('album', 'Flagified Pictures');
       try{
         $.ajax({

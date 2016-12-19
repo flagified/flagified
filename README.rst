@@ -1,7 +1,9 @@
-Flagify
-=======
+Flagified
+=========
 
 Add a flag to your Facebook profile picture.
+
+http://flagified.github.io/flagified/
 
 This website is completely static. Any web server will make it work.
 

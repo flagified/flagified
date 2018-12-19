@@ -1,0 +1,43 @@
+{
+  "name": "smartcrop",
+  "main": "smartcrop.js",
+  "authors": [
+    "Jonas Wagner <jonas@29a.ch>"
+  ],
+  "description": "Content aware image cropping",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jwagner/smartcrop.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "doc",
+    "tests",
+    "karma.conf.js",
+    "Gruntfile.js",
+    "examples"
+  ],
+  "devDependencies": {
+    "underscore": "~1.6.0",
+    "jquery": "~2.1.0",
+    "jasmine": "~2.0.0",
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1"
+  },
+  "version": "2.0.3",
+  "_release": "2.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.3",
+    "commit": "51bf8f98d84990ec029b6940448b3984b9062443"
+  },
+  "_source": "https://github.com/jwagner/smartcrop.js.git",
+  "_target": "*",
+  "_originalSource": "smartcrop"
+}

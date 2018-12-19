@@ -99,7 +99,7 @@ var crop = 0;
       $('.jumbotron').hide();
       $('.image-card, .control-buttons').show();
       self.cropNumber = cropNumber;
-      FB.api('/me/picture',
+      FB.api('/me/picture?redirect=false',
         'GET',
         {'width': '600'},
         function(response) {
@@ -116,22 +116,20 @@ var crop = 0;
       var width = layerImage.width;
       var height = layerImage.height;
 
-      if (!self.crops) {
+      if (!self.crop) {
         SmartCrop.crop(image,
           {
             width: width,
             height: height,
           },
           function(result) {
-            self.crops = result.crops;
+            self.crop = result.topCrop;
+            self.drawImage(image, layerImage, self.crop);
           }
         );
+      } else {
+        self.drawImage(image, layerImage, self.crop);
       }
-      if (!cropNumber) {
-        cropNumber = 0;
-      }
-      var crop = self.crops[cropNumber];
-      self.drawImage(image, layerImage, crop);
     };
 
     this.drawImage = function(image, layer, crop) {
@@ -217,7 +215,7 @@ var crop = 0;
         status: true,
         cookie: true,
         xfbml: true,
-        version: 'v2.5'
+        version: 'v3.2',
       });
       FB.Event.subscribe('auth.statusChange', function(response) {
         self.loggedIn = response.status === 'connected';
